@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Continuous Delivery</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                    <h1>Continuous Delivery</h1>
+                    <img src="img/continous-improvement.png">
+                    <p>Available on: <a target="_blank"
+                        href="http://pokoli.github.io/continuous-delivery">
+                        http://pokoli.github.io/continuous-delivery</a></p>
+                </section>
+				<section>
+                    <h2> Who am I?</h2>
+                    <h3 class="fragment enfassis">
+                        Sergi Almacellas Abellana</h3>
+                    <ul>
+                        <li class="fragment">(Python &hearts;) Programmer</li>
+                        <li class="fragment">Open source enthusiast</li>
+                        <li class="fragment">Automation Maniac</li>
+                        <li class="fragment">Human</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>What all humans have in common?</h2>
+                    <img class="fragment" src="img/human-mistakes.jpg">
+                </section>
+				<section>
+                    <h2>Bug Fixing Costs</h2>
+                    <img class="fragment" src="img/bug-fix-costs.jpg">
+                </section>
+				<section>
+                    <h2>What I do with my bugs?</h2>
+                    <img class="fragment" src="img/fumigating_.jpg">
+                </section>
+				<section>
+                    <h2>What I do when I fixed my bugs?</h2>
+                    <img class="fragment" src="img/keep-calm-and-deploy-to-production.png">
+                </section>
+				<section>
+                    <h2>But it takes ages to deploy to production</h2>
+                    <img class="fragment" src="img/faster.jpeg">
+                    <h3 class="fragment">We do it in <span class="enfassis">5 minutes</span></h3>
+                </section>
+				<section>
+                    <h2>How to improve our deployments?</h2>
+                    <img class="fragment" src="img/continuos-delivery-to-the-rescue.jpg">
+                </section>
+				<section>
+                    <h2>What is continuous delivery?</h2>
+                    <h3 class="fragment">
+                        The <span class="enfassis">Art of producing software</span> in short cycles,
+                        ensuring that can be <span class="enfassis">realiably released at any time</span></h3>
+                    <img class="fragment" src="img/continous-delivery.jpg">
+                </section>
+				<section>
+                    <h2>Continuous delivery agile principles</h2>
+                    <ol class="enfassis">
+                        <li class="fragment">Delivery Early</li>
+                        <li class="fragment">Delivery Frequently</li>
+                        <li class="fragment">Always Working software</li>
+                    </ol>
+                </section>
+				<section>
+                    <h2>Continuous Delivery Requirements</h2>
+                    <ol class="enfassis">
+                        <li class="fragment">Version Control System</li>
+                        <li class="fragment">Automatic Testing</li>
+                        <li class="fragment">Continuous Integration</li>
+                        <li class="fragment">Deployment Script(s)</li>
+                    </ol>
+                </section>
+				<section>
+                    <h2>Nice to have tools</h2>
+                    <ol class="enfassis">
+                        <li class="fragment">Issue Tracker</li>
+                        <li class="fragment">Code Review</li>
+                        <li class="fragment">Automated Merges</li>
+                        <li class="fragment">Monitoring</li>
+                        <li class="fragment">Error tracking</li>
+                    </ol>
+                </section>
+				<section>
+                    <h2>How does it help?</h2>
+                    <img class="fragment" src="img/feedback-everywhere.jpeg">
+                </section>
+				<section>
+                    <h2>But more deploys will introduce more bugs?</h2>
+                    <img class="fragment" src="img/error.gif">
+                </section>
+				<section>
+                    <h2>More deploys -> less bugs?</h2>
+                    <ol class="enfassis">
+                        <li class="fragment">No deployment if CI is broken</li>
+                        <li class="fragment">Automation mitigates human errors</li>
+                        <li class="fragment">Smaller Changes are easier to test</li>
+                        <li class="fragment">Better testing from developers</li>
+                        <li class="fragment">Side Effects are detected (and fixed) faster</li>
+                    </ol>
+                </section>
+				<section>
+                    <h2>But... if something goes wrong?</h2>
+                    <img class="fragment" src="img/human-mistakes.jpg">
+                </section>
+				<section>
+                    <h2>But... if something goes wrong?</h2>
+                    <img class="fragment" src="img/rollback.png">
+                </section>
+				<section>
+                    <h2>But... if something goes wrong?</h2>
+                    <p class="fragment enfassis">Deployment to Multiple Environments</p>
+                    <img class="fragment"src="img/git-flow.png">
+                </section>
+				<section>
+                    <h2>But... if something goes wrong?</h2>
+                    <p class="fragment enfassis">Canary deployments</p>
+                    <img class="fragment" src="img/canary-deployment.png">
+                </section>
+				<section>
+                    <h2>Summary: Results</h2>
+                    <img class="fragment" src="img/happy_face.jpg" style="float: left;">
+                    <ol class="enfassis" style="float: right;">
+                        <li class="fragment">Developers</li>
+                        <li class="fragment">Quality Team</li>
+                        <li class="fragment">Support Team</li>
+                        <li class="fragment">Product Manager</li>
+                        <li class="fragment">Users</li>
+                        <li class="fragment">Managers</li>
+                    </ol>
+                </section>
+				<section>
+                    <h2>Summary: (Real) Results</h2>
+                    <ol class="enfassis">
+                        <li class="fragment">More Quality control</li>
+                        <li class="fragment">Find problems earlier</li>
+                        <li class="fragment">Prevent regressions</li>
+                        <li class="fragment">Faster Development</li>
+                        <li class="fragment">Faster Feedback</li>
+                        <li class="fragment">Reduce change fear</li>
+                    </ol>
+                </section>
+				<section>
+                    <img src="img/demo.jpg">
+                    <p class="fragment"><a target="_blank"
+                        href="https://gitlab.com/pokoli/continuous-delivery-demo">
+                        https://gitlab.com/pokoli/continuous-delivery-demo
+                    </a></p>
+
+                </section>
+				<section>
+                    <img src="img/questions.png">
+                </section>
+				<section>
+                    <h1>Thank you!</h1>
+                    <p>The presentation code is avaiable on </p>
+                    <p><a target="_blank"
+                        href="http://github.com/pokoli/continuous-delivery">
+                        http://github.com/pokoli/continuous-delivery
+                    </a></p>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
